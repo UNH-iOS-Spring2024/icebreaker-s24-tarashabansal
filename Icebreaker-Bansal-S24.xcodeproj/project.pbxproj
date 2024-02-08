@@ -20,6 +20,9 @@
 		296204C82B73146200EBAEAE /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 296204C72B73146200EBAEAE /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		296204CA2B73146200EBAEAE /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 296204C92B73146200EBAEAE /* FirebaseAppCheck */; };
 		296204CD2B73180100EBAEAE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 296204CC2B73180100EBAEAE /* FirebaseFirestore */; };
+		296204CF2B73FB9000EBAEAE /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296204CE2B73FB9000EBAEAE /* StudentData.swift */; };
+		296204D12B73FC8000EBAEAE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296204D02B73FC8000EBAEAE /* Student.swift */; };
+		29FDF2522B74692E00C13A16 /* IceBreakerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDF2512B74692E00C13A16 /* IceBreakerForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +31,12 @@
 		296204AE2B7304E900EBAEAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		296204B02B7304EA00EBAEAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296204B32B7304EA00EBAEAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		296204BA2B73092400EBAEAE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		296204BA2B73092400EBAEAE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = "Icebreaker-Bansal-S24/.gitignore"; sourceTree = "<group>"; };
 		296204BC2B73102400EBAEAE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		296204BE2B7313A200EBAEAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		296204CE2B73FB9000EBAEAE /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
+		296204D02B73FC8000EBAEAE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		29FDF2512B74692E00C13A16 /* IceBreakerForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBreakerForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				296204BE2B7313A200EBAEAE /* GoogleService-Info.plist */,
+				296204BA2B73092400EBAEAE /* .gitignore */,
 				296204AB2B7304E900EBAEAE /* Icebreaker-Bansal-S24 */,
 				296204AA2B7304E900EBAEAE /* Products */,
 				296204CB2B73180100EBAEAE /* Frameworks */,
@@ -71,10 +78,12 @@
 		296204AB2B7304E900EBAEAE /* Icebreaker-Bansal-S24 */ = {
 			isa = PBXGroup;
 			children = (
-				296204BA2B73092400EBAEAE /* .gitignore */,
 				296204AC2B7304E900EBAEAE /* Icebreaker_Bansal_S24App.swift */,
 				296204AE2B7304E900EBAEAE /* ContentView.swift */,
+				296204CE2B73FB9000EBAEAE /* StudentData.swift */,
+				29FDF2512B74692E00C13A16 /* IceBreakerForm.swift */,
 				296204BC2B73102400EBAEAE /* Question.swift */,
+				296204D02B73FC8000EBAEAE /* Student.swift */,
 				296204B02B7304EA00EBAEAE /* Assets.xcassets */,
 				296204B22B7304EA00EBAEAE /* Preview Content */,
 			);
@@ -180,7 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				296204BD2B73102400EBAEAE /* Question.swift in Sources */,
+				296204CF2B73FB9000EBAEAE /* StudentData.swift in Sources */,
 				296204AF2B7304E900EBAEAE /* ContentView.swift in Sources */,
+				296204D12B73FC8000EBAEAE /* Student.swift in Sources */,
+				29FDF2522B74692E00C13A16 /* IceBreakerForm.swift in Sources */,
 				296204AD2B7304E900EBAEAE /* Icebreaker_Bansal_S24App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

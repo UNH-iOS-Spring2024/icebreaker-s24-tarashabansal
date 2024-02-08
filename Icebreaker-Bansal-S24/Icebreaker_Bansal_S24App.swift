@@ -21,12 +21,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct Icebreaker_Bansal_S24App: App {
-//    init(){
-//        let providerFactory  = AppCheckDebugProviderFactory()
-//        AppCheck.setAppCheckProviderFactory(providerFactory)
-//        
-//        FirebaseApp.configure()
-//    }
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
