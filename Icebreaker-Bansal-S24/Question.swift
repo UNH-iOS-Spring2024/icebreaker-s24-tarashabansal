@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Question{
+class Question: Identifiable{
     var id: String
     var text: String
     

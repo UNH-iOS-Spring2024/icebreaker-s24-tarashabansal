@@ -23,6 +23,7 @@
 		296204CF2B73FB9000EBAEAE /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296204CE2B73FB9000EBAEAE /* StudentData.swift */; };
 		296204D12B73FC8000EBAEAE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296204D02B73FC8000EBAEAE /* Student.swift */; };
 		29FDF2522B74692E00C13A16 /* IceBreakerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDF2512B74692E00C13A16 /* IceBreakerForm.swift */; };
+		29FDF2542B7AA68200C13A16 /* QuestionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDF2532B7AA68200C13A16 /* QuestionForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		296204CE2B73FB9000EBAEAE /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 		296204D02B73FC8000EBAEAE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		29FDF2512B74692E00C13A16 /* IceBreakerForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceBreakerForm.swift; sourceTree = "<group>"; };
+		29FDF2532B7AA68200C13A16 /* QuestionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				296204AE2B7304E900EBAEAE /* ContentView.swift */,
 				296204CE2B73FB9000EBAEAE /* StudentData.swift */,
 				29FDF2512B74692E00C13A16 /* IceBreakerForm.swift */,
+				29FDF2532B7AA68200C13A16 /* QuestionForm.swift */,
 				296204BC2B73102400EBAEAE /* Question.swift */,
 				296204D02B73FC8000EBAEAE /* Student.swift */,
 				296204B02B7304EA00EBAEAE /* Assets.xcassets */,
@@ -192,6 +195,7 @@
 				296204CF2B73FB9000EBAEAE /* StudentData.swift in Sources */,
 				296204AF2B7304E900EBAEAE /* ContentView.swift in Sources */,
 				296204D12B73FC8000EBAEAE /* Student.swift in Sources */,
+				29FDF2542B7AA68200C13A16 /* QuestionForm.swift in Sources */,
 				29FDF2522B74692E00C13A16 /* IceBreakerForm.swift in Sources */,
 				296204AD2B7304E900EBAEAE /* Icebreaker_Bansal_S24App.swift in Sources */,
 			);

@@ -13,8 +13,13 @@ struct StudentData: View {
     @State var students = [Student]()
 
     var body: some View {
+        
         List{
-            
+            Text("Student List")
+                .font(.system(size: 40))
+                .bold()
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            Divider()
             ForEach(students) { student in
                 let fname = student.first_name
                 let lname = student.last_name
@@ -32,9 +37,11 @@ struct StudentData: View {
         .onAppear(){
             getStudent()
         }
+        .scrollContentBackground(.hidden)
     }
     
     func getStudent(){
+        self.students = []
         db.collection("students")
         .getDocuments(){
             (querySnapshot,err) in

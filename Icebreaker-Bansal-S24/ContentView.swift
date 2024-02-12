@@ -11,7 +11,24 @@ import FirebaseFirestore
 
 struct ContentView: View {
     var body: some View {
-        IceBreakerForm()
+        TabView {
+           IceBreakerForm()
+             .tabItem {
+                Image(systemName: "house.fill")
+                Text("Home")
+              }
+            StudentData()
+                 .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Student List")
+                  }
+            QuestionForm()
+                 .tabItem {
+                    Image(systemName: "bubble.fill")
+                    Text("Add Question")
+                  }
+        }
+        
     }
 }
 
