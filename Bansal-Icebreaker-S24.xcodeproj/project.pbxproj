@@ -11,6 +11,7 @@
 		29E1F5542B7C567F00A16A12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E1F5532B7C567F00A16A12 /* ContentView.swift */; };
 		29E1F5562B7C568000A16A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E1F5552B7C568000A16A12 /* Assets.xcassets */; };
 		29E1F5592B7C568000A16A12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E1F5582B7C568000A16A12 /* Preview Assets.xcassets */; };
+		29E1F5602B7C56B500A16A12 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 29E1F55F2B7C56B500A16A12 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		29E1F5532B7C567F00A16A12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		29E1F5552B7C568000A16A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E1F5582B7C568000A16A12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29E1F55F2B7C56B500A16A12 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		29E1F5452B7C567F00A16A12 = {
 			isa = PBXGroup;
 			children = (
+				29E1F55F2B7C56B500A16A12 /* .gitignore */,
 				29E1F5502B7C567F00A16A12 /* Bansal-Icebreaker-S24 */,
 				29E1F54F2B7C567F00A16A12 /* Products */,
 			);
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E1F5592B7C568000A16A12 /* Preview Assets.xcassets in Resources */,
+				29E1F5602B7C56B500A16A12 /* .gitignore in Resources */,
 				29E1F5562B7C568000A16A12 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
