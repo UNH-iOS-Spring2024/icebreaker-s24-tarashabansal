@@ -11,33 +11,30 @@ import FirebaseFirestore
 struct StudentData: View {
     let db = Firestore.firestore()
     @State var students = [Student]()
-
+    
     var body: some View {
-        
-        List{
+        VStack{
             Text("Student List")
                 .font(.system(size: 40))
                 .bold()
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            Divider()
-            ForEach(students) { student in
-                let fname = student.first_name
-                let lname = student.last_name
-                let ques = student.question
-                let ans = student.answer
-                Text(fname + " " + lname)
-                    .bold()
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .listRowSeparator(.hidden)
-                Text(ques + "\nAnswer: " + ans)
+                .frame(width: .infinity)
+            
+            Table(students){
                 
-                Spacer()
+                TableColumn("Spring 2024") { student in
+                    VStack(alignment: .leading) {
+                        Text(student.first_name + " " + student.last_name)
+                        Text(student.question + " - " + student.answer)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+            .tableStyle(InsetTableStyle())
+            .onAppear(){
+                getStudent()
             }
         }
-        .onAppear(){
-            getStudent()
-        }
-        .scrollContentBackground(.hidden)
+    
     }
     
     func getStudent(){
@@ -48,7 +45,7 @@ struct StudentData: View {
             if let err = err{ //error not nil
                 print("Error getting documents: \(err)")
             }
-            else{ //get questions from db
+            else{ //get students from db
                 for document in querySnapshot!.documents{
                     print("\(document.documentID)")
                     if let student = Student(id:document.documentID, data: document.data()){

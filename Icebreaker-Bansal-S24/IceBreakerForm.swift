@@ -34,28 +34,36 @@ struct IceBreakerForm: View {
                     .font(.title)
                     .padding(.trailing, 20)
                     .fixedSize(horizontal: false, vertical: true)
+                Spacer().frame(width: 30)
                 Button(action:{setRandomQuestion()}){
                     Image(systemName: "arrow.triangle.2.circlepath")
                 }
                 .padding(10)
                 .frame(maxWidth: 2)
-                .foregroundColor(.black)
             }
             TextField("Answer",text: $txtAnswer)
-            Button(action:{
-                if (txtAnswer != ""){
-                    submitStudent()
+            Spacer().frame(height: 40)
+            HStack{
+                Button(action:{
+                    if (txtAnswer != ""){
+                        submitStudent()
+                    }
+                    resetTextFields()
+                }){
+                    Text("Submit")
                 }
-                resetTextFields()
-            }){
-                Text("Submit")
-                    .font(.system(size: 28))
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+                Spacer().frame(width: 30)
+                Button(action:{
+                    resetTextFields()
+                }){
+                    Text("Cancel")
+                }
+                .buttonStyle(.bordered)
+                .buttonBorderShape(.capsule)
             }
-            .frame(maxWidth: . infinity)
-            .foregroundStyle(.white)
-            .padding()
-            .background(.blue)
-            .cornerRadius(10)
+            
         }
         .font(.title)
         .multilineTextAlignment(.center)
@@ -91,6 +99,7 @@ struct IceBreakerForm: View {
         txtQuestion=""
         txtAnswer=""
         txtPreferredname=""
+        setRandomQuestion()
     }
     func getQuestion(){
         db.collection("questions")

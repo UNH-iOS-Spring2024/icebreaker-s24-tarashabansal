@@ -17,6 +17,7 @@ struct QuestionForm: View {
     @State var questions = [Question]()
     var body: some View {
         VStack{
+            Spacer().frame(height: 40)
             TextField("Add a new question",text: $txtNewQues)
             Button(action:{
                 if (txtNewQues != ""){
@@ -31,18 +32,14 @@ struct QuestionForm: View {
             .padding()
             .background(.blue)
             .cornerRadius(10)
-            List{
-                
-                ForEach(questions) { question in
-                    Text(question.text)
-                }
+            Spacer().frame(height: 40)
+            Table(questions){
+                TableColumn("Question", value: \.text)
             }
-            .background()
             .onAppear(){
                 getQuestion()
             }
-            .scrollContentBackground(.hidden)
-            .frame(maxHeight:500)
+            
             
         }
         .padding()
